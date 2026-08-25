@@ -1,0 +1,23 @@
+# requirements.txt
+
+# GUI
+customtkinter>=5.2.0
+tkinterweb>=3.24.0        # HTML rendering inside Tkinter (falls back gracefully if unavailable)
+markdown2>=2.4.0          # Markdown -> HTML conversion for LLM output rendering
+
+# Local LLM runtime (Ollama HTTP API — no SDK required, but keep the option available)
+requests>=2.31.0
+
+# NLP / intent routing
+nltk>=3.8.1
+
+# Modular information fetchers
+wikipedia>=1.4.0
+arxiv>=2.1.0
+yt-dlp>=2024.3.10
+
+# Audio playback / TTS feedback cues
+pygame>=2.5.0
+
+# Standard library modules used (threading, concurrent.futures, json, re, dataclasses,
+# logging) require no extra install.
